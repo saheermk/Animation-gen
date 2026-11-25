@@ -151,3 +151,9 @@ Just attach **`SKILL.md`** and type whatever is in your mind!
 > * **Language & Captions:** `[e.g., Malayalam / Hindi / Tamil / English]`
 > * **Audio Mode:** `[I will upload my own MP3/MP4 clip]` OR `[Generate fast-paced male/female voiceover via Gemini TTS]`
 > * **Idea / Script:** `[Describe what's in your mind, or paste lyrics/dialogue/SRT]`
+>
+> <!-- ... existing code ... -->
+[ ] Resilient Audio Startup: Always await audioCtx.resume() inside startPlayback() so mobile browsers never stall on a suspended AudioContext.
+[ ] Cancellable Exports: Always include a Cancel Export button inside the export progress overlay that cleanly aborts both WebCodecs MP4 and MediaRecorder WebM renders, closes encoders immediately, and skips file download.
+[ ] Startup Error Guard: Wrap window.onload initialization in try { ... } catch (err) and surface any errors cleanly.
+<!-- ... existing code ... -->
