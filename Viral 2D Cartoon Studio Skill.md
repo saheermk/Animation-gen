@@ -152,8 +152,9 @@ Just attach **`SKILL.md`** and type whatever is in your mind!
 > * **Audio Mode:** `[I will upload my own MP3/MP4 clip]` OR `[Generate fast-paced male/female voiceover via Gemini TTS]`
 > * **Idea / Script:** `[Describe what's in your mind, or paste lyrics/dialogue/SRT]`
 >
-> <!-- ... existing code ... -->
-[ ] Resilient Audio Startup: Always await audioCtx.resume() inside startPlayback() so mobile browsers never stall on a suspended AudioContext.
-[ ] Cancellable Exports: Always include a Cancel Export button inside the export progress overlay that cleanly aborts both WebCodecs MP4 and MediaRecorder WebM renders, closes encoders immediately, and skips file download.
-[ ] Startup Error Guard: Wrap window.onload initialization in try { ... } catch (err) and surface any errors cleanly.
+<!-- ... existing code ... -->
+​[ ] Resilient Audio Startup: Always await audioCtx.resume() inside startPlayback() so mobile browsers never stall on a suspended AudioContext.
+​[ ] Single Fixed Voice, Mood-Only TTS Rule: Never split a short video's narration into multiple voices or conflicting TTS calls. Always lock every generated video to one fixed signature voice (Fenrir) in 1 single unified Gemini TTS call, changing only the Delivery Mood (always fast-paced, punchy, and attention-grabbing).
+​[ ] Cancellable Exports: Always include a Cancel Export button inside the export progress overlay that cleanly aborts both WebCodecs MP4 and MediaRecorder WebM renders, closes encoders immediately, and skips file download.
+​[ ] Startup Error Guard: Wrap window.onload initialization in try { ... } catch (err) and surface any errors cleanly.
 <!-- ... existing code ... -->
