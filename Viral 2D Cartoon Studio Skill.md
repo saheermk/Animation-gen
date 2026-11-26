@@ -158,3 +158,7 @@ Just attach **`SKILL.md`** and type whatever is in your mind!
 ​[ ] Cancellable Exports: Always include a Cancel Export button inside the export progress overlay that cleanly aborts both WebCodecs MP4 and MediaRecorder WebM renders, closes encoders immediately, and skips file download.
 ​[ ] Startup Error Guard: Wrap window.onload initialization in try { ... } catch (err) and surface any errors cleanly.
 <!-- ... existing code ... -->
+8. Master Vocal Cadence & Western Pitch Code Standard (Gemini TTS)
+Single Fixed Voice, Mood-Only Rule: Never split a short video into multiple voices or conflicting TTS calls. Always generate the entire voiceover in 1 single unified Gemini TTS call locked to one signature voice (Orus), changing only the Delivery Mood (default: Playful Comedy Teaser (Witty & Snappy)—always crisp, fast-paced, and punchy).
+Strict PCM16 Decoding: Decode Gemini's audio/L16;rate=24000 response using DataView.getInt16(i * 2, true) / 32768.0, with fallback to AudioContext.decodeAudioData() for container audio.
+<!-- ... existing code ... -->
